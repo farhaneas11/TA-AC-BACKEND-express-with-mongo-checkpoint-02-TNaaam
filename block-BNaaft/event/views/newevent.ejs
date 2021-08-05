@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Event Management
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Add New Event
+            </h2>
+            <form action="/event" method="POST">
+                <input type="text" name="title" placeholder="Enter Title">
+                <textarea name="summary" placeholder="Enter Summary" id="text-summary" cols="30" rows="10"></textarea>
+                <input type="text" name="host" placeholder="Enter Host">
+                <input type="date" name="start_date" placeholder="Enter Start Date">
+                <input type="date" name="end_date" placeholder="Enter End Date">
+                <input type="text" name="event_category" placeholder="Enter Event Category">
+                <input type="text" name="location" placeholder="Enter Location">
+                <button type="submit" >
+                    Submit
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
